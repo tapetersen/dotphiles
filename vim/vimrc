@@ -1,28 +1,15 @@
-"
-" dotphiles : https://github.com/dotphiles/dotphiles
-"
-" Setup vim and load required plugins before dotvim
-"
-" Authors:
-"   Ben O'Hara <bohara@gmail.com>
-"
+set  nocompatible
+filetype off
 
-" Call dotvim
-source ~/.vim/dotvim.vim
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-if has("user_commands")
-  set nocompatible
-  filetype off
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  "let g:vundles=['general', 'git', 'hg', 'programming', 'completion', 'ruby', 'python', 'misc']
-  let g:vundles=[]
-  let g:neocomplcache_enable_at_startup = 1
-  " Load 'vundles'
-  source ~/.vim/vundles.vim
-  " Add extra bundles here...
-  " Bundle 'reponame'
-endif
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-" Customize to your needs...
+Plugin 'tpope/vim-sensible'
+Plugin 'saltstack/salt-vim'
 
+call vundle#end()          
+filetype plugin indent on   
