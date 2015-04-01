@@ -9,13 +9,8 @@
 
 # Global Config
 [user]
-    #name = "**Your Name**"
-    #email = "**Your Email**"
-    #signingkey = **Your GPG ID**
-
-[branch "master"]
-    remote = origin
-    merge = refs/heads/master
+    name = Tobias Alex-Petersen
+    email = tobias@bombayworks.se
 
 [color]
     branch = always
@@ -141,11 +136,8 @@
     rem = remote rename
 
 [push]
-    default = matching
+    default = simple
 
 [url "git@github.com:"]
     insteadof = github:
 
-[user]
-	name = Tobias Alex-Petersen
-	email = tobias@bombayworks.se
